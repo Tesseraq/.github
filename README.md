@@ -1,1 +1,1 @@
-# .github
+# Tessearq Standard Github repos
