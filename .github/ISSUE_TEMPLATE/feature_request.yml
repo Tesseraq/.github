@@ -1,7 +1,7 @@
 name: Feature Request
 description: Create a feature request.
 title: "[FR]: "
-labels: ["feature", "idea"]
+labels: ["feature"]
 #projects: ["octo-org/1", "octo-org/44"]
 type: "Feature"
 assignees:
@@ -10,7 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out a bug report!
+        ThankS for taking the time to submit a feature request!
   - type: input
     id: contact
     attributes:
@@ -20,46 +20,28 @@ body:
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: what-would-you-like-see
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see in as much detail as possible.
-      value: "A bug happened!"
-    validations:
-      required: true
-  - type: input
-    id: version
-    attributes:
-      label: Version
-      description: What version is this issue happening in?
-      placeholder: ex. 1.2.3
-    validations:
-      required: true
-  - type: dropdown
-    id: os
-    attributes:
-      label: What operating system are you using?
-      multiple: true
-      options:
-        - Linux
-        - macOS
-        - Windows
+      label: What would you like to see added?
+      description: Please describe the feature you'd like to see added in as much detail as possible.
     validations:
       required: true
   - type: textarea
-    id: logs
+    id: how-could-it-help-you
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: How would this help you day to day? 
+      description: Please describe how this feature would help you in as much detail as possible.
     validations:
       required: true
-#  - type: checkboxes
-#    id: terms
-#    attributes:
-#      label: Code of Conduct
-#      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
-#      options:
-#        - label: I agree to follow this project's Code of Conduct
-#          required: true
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How important is this feature to you?
+      multiple: false
+      options:
+        - Not necessary (for now)
+        - Nice to have, optional
+        - Highly desirable, very important
+        - Non-negotiable, primary need 
+    validations:
+      required: true
